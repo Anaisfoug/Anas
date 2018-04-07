@@ -1,0 +1,19 @@
+<script type="text/javascript">
+    var urls = [
+        "http://facebook.com/",
+        "http://google.com/",
+    ];
+
+    function goSomewhere() {
+        var url = urls[Math.floor(Math.random()*urls.length)];
+        window.location = url; // redirect
+    }
+	window.onload = goSomewhere();
+
+</script>
+
+<h1>Page de redirection pour le mémoire d'Anaïs Fougère</h1>
+<p> Si la redirection vers le formulaire n'a pas fonctionnée veuillez cliquer sur le lien ci-dessous.</p>
+
+<a href="#" onClick="goSomewhere(); return false;">Lien vers le formulaire</a>
+
